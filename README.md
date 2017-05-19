@@ -1,4 +1,4 @@
-## Angular 2 Data Table
+## Angular 2 Data Table Bootstrap 4
 
 A simple Angular 2 data table, with built-in solutions for features including:
 
@@ -16,7 +16,7 @@ The templates use bootstrap 4 CSS class names, so the component requires a boots
 The templates use Font Awesome CSS class names, so the component requires Font Awesome to be present in the application using it.
 
 ## Installing:
-`npm install angular-datatable --save`
+`npm install ng2-datatable-bootstrap4 --save`
 
 ## Usage:
 

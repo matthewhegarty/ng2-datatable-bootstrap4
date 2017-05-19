@@ -1,8 +1,8 @@
-# Versioning Angular-DataTable
+# Versioning NG2-DataTable-Bootstrap4
 
 Version maintenance is a critical aspect of maintaining a public NPM package. New versions must be carefully managed to ensure they properly publish. Moreso, proper linting and testing must be performed on each version before publishing to ensure a bad version is never published to the public NPM repository.
 
-Please follow this procedure to version angular-datatable before publishing:
+Please follow this procedure to version ng2-datatable-bootstrap4 before publishing:
 
 ## Versioning Procedure
 
