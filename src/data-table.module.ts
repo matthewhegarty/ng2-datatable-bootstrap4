@@ -12,6 +12,8 @@ import {PixelConverter} from './utils/px';
 import {Hide} from './utils/hide';
 import {MinPipe} from './utils/min';
 
+import { DataTableResource } from './tools/data-table-resource';
+
 @NgModule({
     imports: [
         CommonModule,
