@@ -10,7 +10,7 @@ export type CellCallback = (item: any, row: DataTableRow, column: DataTableColum
 
 export type DataTableSortCallback = (a: any, b: any) => number;
 
-export interface DataTableTranslations {
+export class DataTableTranslations {
     indexColumn: string;
     selectColumn: string;
     expandColumn: string;
@@ -27,7 +27,7 @@ export var defaultTranslations = <DataTableTranslations>{
 };
 
 
-export interface DataTableParams {
+export class DataTableParams {
     offset?: number;
     limit?: number;
     sortBy?: string;
