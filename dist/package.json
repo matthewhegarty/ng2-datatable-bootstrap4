@@ -1,6 +1,6 @@
 {
   "name": "ng2-datatable-bootstrap4",
-  "version": "2.3.0",
+  "version": "2.3.5",
   "description": "An Angular 2 datatable, with pagination, sorting, expandable rows etc.",
   "main": "bundles/datatable.umd.js",
   "module": "index.js",
