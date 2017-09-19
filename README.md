@@ -30,3 +30,8 @@ If custom sort is not required, then only the `[sortBy]` binding is necessary.
 
 #### Licensing
 MIT License
+
+
+#### ISSUES
+
+- <tbody> tag is repeated unnecessarily - [tbody definition](https://www.w3schools.com/tags/tag_tbody.asp)
