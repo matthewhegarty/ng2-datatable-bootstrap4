@@ -33,4 +33,5 @@ export class DataTableParams {
     sortBy?: string;
     customSort?: DataTableSortCallback;
     sortAsc?: boolean;
+    filterText?: string;
 }

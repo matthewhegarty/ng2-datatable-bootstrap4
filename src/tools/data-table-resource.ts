@@ -8,10 +8,12 @@ export class DataTableResource<T> {
     query(params: DataTableParams, filter?: (item: T, index: number, items: T[]) => boolean): Promise<T[]> {
 
         let result: T[] = [];
-        if (filter) {
+        if (params.filterText && params.filterText.length > 0 && filter) {
             result = this.items.filter(filter);
         } else {
-            result = this.items.slice(); // shallow copy to use for sorting instead of changing the original
+            if (this.items) {
+                result = this.items.slice(); // shallow copy to use for sorting instead of changing the original
+            }
         }
 
         if (params.sortBy) {
