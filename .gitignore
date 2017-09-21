@@ -9,4 +9,3 @@ npm-debug.log
 /src/**/*.js*
 /src/**/*.ngfactory.ts
 **/*.ngsummary.json
-/aot
