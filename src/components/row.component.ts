@@ -63,5 +63,5 @@ export class DataTableRow implements OnDestroy {
         this.selected = false;
     }
 
-    private _this = this; // FIXME is there no template keyword for this in angular 2?
+    _this = this;
 }
