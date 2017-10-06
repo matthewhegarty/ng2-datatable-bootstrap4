@@ -30,3 +30,24 @@ If custom sort is not required, then only the `[sortBy]` binding is necessary.
 
 #### Licensing
 MIT License
+
+
+#### ISSUES
+
+- <tbody> tag is repeated unnecessarily - [tbody definition](https://www.w3schools.com/tags/tag_tbody.asp)
+- Given a structure like:
+
+```
+            <data-table-column
+                [header]="'Primary Outlet'"
+                [sortable]="true"
+                [resizable]="true"
+                [property]="'primaryOutletName'"
+            >
+                <ng-template #dataTableCell let-item="item">
+                    {{ item.primaryOutletName }}
+                </ng-template>
+            </data-table-column>
+```
+
+The column is only sortable if the property is in single quotes - removing these means that the row is not sortable - why?

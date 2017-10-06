@@ -1,7 +1,6 @@
 export const TABLE_TEMPLATE = `
 <div class="data-table-wrapper">
-    <data-table-header *ngIf="header"></data-table-header>
-
+    <data-table-header *ngIf="header" (filterChangeEvent)="handleFilterChangeEvent($event)"></data-table-header>
     <div class="data-table-box">
         <table class="table table-condensed table-bordered data-table">
             <thead>

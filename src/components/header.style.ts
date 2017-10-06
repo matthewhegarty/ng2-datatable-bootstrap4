@@ -32,4 +32,8 @@ export const HEADER_STYLE = `
 .column-selector-fixed-column {
     font-style: italic;
 }
+#filter-input {
+    float: right;
+    margin-bottom: 12px;
+}
 `;

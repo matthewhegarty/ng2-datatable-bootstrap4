@@ -1,6 +1,6 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 import {DataTable} from './components/table.component';
 import {DataTableColumn} from './components/column.component';
@@ -17,7 +17,8 @@ import { DataTableResource } from './tools/data-table-resource';
 @NgModule({
     imports: [
         CommonModule,
-        FormsModule
+        FormsModule,
+        ReactiveFormsModule
     ],
     declarations: [
         DataTable,

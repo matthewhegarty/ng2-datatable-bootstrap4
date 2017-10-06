@@ -1,6 +1,9 @@
 export const HEADER_TEMPLATE = `
 <div class="data-table-header">
     <h4 class="title" [textContent]="dataTable.headerTitle"></h4>
+    <div id="filter-input" *ngIf="dataTable.showFilterInput">
+        <input [formControl]="filterControl" placeholder="Search">
+    </div>
     <div class="button-panel">
         <button type="button" class="btn btn-default btn-sm refresh-button"
             (click)="dataTable.reloadItems()">

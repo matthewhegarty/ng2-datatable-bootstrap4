@@ -1,6 +1,6 @@
 import {
     Component, Input, Output, EventEmitter, ContentChildren, QueryList,
-    TemplateRef, ContentChild, ViewChildren, OnInit
+    TemplateRef, ContentChild, ViewChild, ViewChildren, OnInit, forwardRef
 } from '@angular/core';
 
 import {DataTableColumn} from './column.component';
@@ -20,6 +20,7 @@ import {TABLE_STYLE} from "./table.style";
 export class DataTable implements DataTableParams, OnInit {
 
     private _items: any[] = [];
+    filterText: string = '';
 
     @Input() get items() {
         return this._items;
@@ -56,6 +57,7 @@ export class DataTable implements DataTableParams, OnInit {
     @Input() autoReload = true;
     @Input() showReloading = false;
     @Input() showDownloadButton = false;
+    @Input() showFilterInput = false;
 
     // UI state without input:
 
@@ -235,11 +237,11 @@ export class DataTable implements DataTableParams, OnInit {
     @Output() cellClick = new EventEmitter();
     @Output() rowExpandChange = new EventEmitter();
 
-    private rowClicked(row: DataTableRow, event: Event) {
+    rowClicked(row: DataTableRow, event: Event) {
         this.rowClick.emit({row, event});
     }
 
-    private rowDoubleClicked(row: DataTableRow, event: Event) {
+    rowDoubleClicked(row: DataTableRow, event: Event) {
         this.rowDoubleClick.emit({row, event});
     }
 
@@ -269,6 +271,7 @@ export class DataTable implements DataTableParams, OnInit {
             params.offset = this.offset;
             params.limit = this.limit;
         }
+        params.filterText = this.filterText;
         return params;
     }
 
@@ -290,7 +293,7 @@ export class DataTable implements DataTableParams, OnInit {
         return count;
     }
 
-    private getRowColor(item: any, index: number, row: DataTableRow) {
+    getRowColor(item: any, index: number, row: DataTableRow) {
         if (this.rowColors !== undefined) {
             return (<RowCallback>this.rowColors)(item, row, index);
         }
@@ -381,5 +384,12 @@ export class DataTable implements DataTableParams, OnInit {
             return false;
         }
         return true;
+    }
+
+    private handleFilterChangeEvent(filterText: string) {
+        // User has changed the text in the search box, therefore set this value and trigger a reload,
+        // so that client-supplied code can perform the filter
+        this.filterText = filterText;
+        this._triggerReload();
     }
 }
