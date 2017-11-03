@@ -1,6 +1,6 @@
 {
   "name": "ng2-datatable-bootstrap4",
-  "version": "2.4.0",
+  "version": "2.4.1",
   "description": "An Angular 2 datatable, with pagination, sorting, expandable rows etc.",
   "main": "bundles/datatable.umd.js",
   "module": "index.js",
@@ -16,7 +16,7 @@
     "data table",
     "pagination"
   ],
-  "author": "Anton Kozyritskiy <anton.kozyritskiy@gmail.com>",
+  "author": "Matt Hegarty <mrhegarty@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -27,11 +27,11 @@
     "url": "https://github.com/akozyritskiy/ng2-datatable-bootstrap4/issues"
   },
   "peerDependencies": {
-    "@angular/common": "^4.4.1",
-    "@angular/core": "^4.4.1",
-    "@angular/forms": "^4.4.1",
-    "@angular/platform-server": "^4.4.1",
-    "@angular/platform-browser": "^4.4.1",
-    "@angular/animations": "^4.4.1"
+    "@angular/common": "^5.0.0",
+    "@angular/core": "^5.0.0",
+    "@angular/forms": "^5.0.0",
+    "@angular/platform-server": "^5.0.0",
+    "@angular/platform-browser": "^5.0.0",
+    "@angular/animations": "^5.0.0"
   }
 }

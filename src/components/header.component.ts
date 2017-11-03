@@ -3,7 +3,8 @@ import { DataTable } from './table.component';
 import { HEADER_TEMPLATE } from './header.template';
 import { HEADER_STYLE } from "./header.style";
 import {FormControl} from "@angular/forms";
-import {Observable} from 'rxjs/Rx'
+import 'rxjs/add/operator/debounceTime';
+import 'rxjs/add/operator/distinctUntilChanged';
 
 @Component({
   selector: 'data-table-header',
