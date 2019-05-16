@@ -27,11 +27,11 @@
     "url": "https://github.com/akozyritskiy/ng2-datatable-bootstrap4/issues"
   },
   "peerDependencies": {
-    "@angular/common": "^5.0.0",
-    "@angular/core": "^5.0.0",
-    "@angular/forms": "^5.0.0",
-    "@angular/platform-server": "^5.0.0",
-    "@angular/platform-browser": "^5.0.0",
-    "@angular/animations": "^5.0.0"
+    "@angular/common": "^6.1.10",
+    "@angular/core": "^6.1.10",
+    "@angular/forms": "^6.1.10",
+    "@angular/platform-server": "^6.1.10",
+    "@angular/platform-browser": "^6.1.10",
+    "@angular/animations": "^6.1.10"
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "ng2-datatable-bootstrap4",
-  "version": "2.4.1",
+  "version": "3.0.0",
   "description": "An Angular 2 datatable, with pagination, sorting, expandable rows etc.",
   "main": "dist/bundles/angular-datatable.umd.js",
   "module": "dist/index.js",
@@ -26,36 +26,36 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://git@github.com/akozyritskiy/ng2-datatable-bootstrap4.git"
+    "url": "git://git@github.com/matthewhegarty/ng2-datatable-bootstrap4.git"
   },
   "author": "Matt Hegarty <mrhegarty@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "@angular/core": "^5.0.0",
-    "@angular/animations": "^5.0.0",
-    "@angular/common": "^5.0.0",
-    "@angular/compiler": "^5.0.0",
-    "@angular/forms": "^5.0.0",
-    "@angular/platform-browser": "^5.0.0",
-    "@angular/platform-browser-dynamic": "^5.0.0",
-    "@angular/cli": "^1.5.0",
-    "@angular/compiler-cli": "^5.0.0",
-    "@angular/platform-server": "^5.0.0",
+    "@angular/animations": "^6.1.10",
+    "@angular/cli": "^1.7.4",
+    "@angular/common": "^6.1.10",
+    "@angular/compiler": "^6.1.10",
+    "@angular/compiler-cli": "^6.1.10",
+    "@angular/core": "^6.1.10",
+    "@angular/forms": "^6.1.10",
+    "@angular/platform-browser": "^6.1.10",
+    "@angular/platform-browser-dynamic": "^6.1.10",
+    "@angular/platform-server": "^6.1.10",
     "copyfiles": "^1.2.0",
     "cz-conventional-changelog": "1.2.0",
-    "rimraf": "^2.6.1",
+    "rimraf": "^2.6.3",
     "rollup": "^0.37.0",
-    "typescript": "~2.4.2",
+    "typescript": "~2.9.2",
     "uglify-js": "^2.7.5",
     "validate-commit-msg": "2.8.2"
   },
   "peerDependencies": {
-    "@angular/common": "^5.0.0",
-    "@angular/core": "^5.0.0",
-    "@angular/forms": "^5.0.0",
-    "@angular/platform-server": "^5.0.0",
-    "@angular/platform-browser": "^5.0.0",
-    "@angular/animations": "^5.0.0"
+    "@angular/common": "^6.1.10",
+    "@angular/core": "^6.1.10",
+    "@angular/forms": "^6.1.10",
+    "@angular/platform-server": "^6.1.10",
+    "@angular/platform-browser": "^6.1.10",
+    "@angular/animations": "^6.1.10"
   },
   "config": {
     "ghooks": {
@@ -64,5 +64,8 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "dependencies": {
+    "rxjs": "^6.5.2"
   }
 }
