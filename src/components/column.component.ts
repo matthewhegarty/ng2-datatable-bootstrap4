@@ -21,8 +21,8 @@ export class DataTableColumn implements OnInit {
     @Input() width: number | string;
     @Input() visible = true;
 
-    @ContentChild('dataTableCell') cellTemplate: any;
-    @ContentChild('dataTableHeader') headerTemplate: any;
+    @ContentChild('dataTableCell', {static: false}) cellTemplate: any;
+    @ContentChild('dataTableHeader', {static: false}) headerTemplate: any;
 
     getCellColor(row: DataTableRow, index: number) {
         if (this.cellColors !== undefined) {

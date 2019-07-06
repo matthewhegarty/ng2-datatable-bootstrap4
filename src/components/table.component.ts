@@ -43,7 +43,7 @@ export class DataTable implements DataTableParams, OnInit {
 
     @ContentChildren(DataTableColumn) columns: QueryList<DataTableColumn>;
     @ViewChildren(DataTableRow) rows: QueryList<DataTableRow>;
-    @ContentChild('dataTableExpand') expandTemplate: TemplateRef<any>;
+    @ContentChild('dataTableExpand', {static: false}) expandTemplate: TemplateRef<any>;
 
     // One-time optional bindings with default values:
 
